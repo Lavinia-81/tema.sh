@@ -16,7 +16,7 @@ done
 
 
 
-###How to get the sum of even orr odd number
+###How to get the sum of even number###
 sum=0
 for ((i=0; i<100; i+=2)); do
    sum=$((sum + i))
@@ -24,9 +24,18 @@ for ((i=0; i<100; i+=2)); do
    echo "Sum of even number below 100: $sum"
 
 
+###How to get the sum of odd number###
+sum=1
+for ((i=1; i<100; i+=2)); do
+     sum=$((sum + i))
+ done
+   echo "Sum of odd number below 100: $sum"
+
+
+
+
 
 ### How to get the max number from a array###
-
 max=0
  for ((i=1; i<=$max; i++)); do
     if [ $num -gt $max]
@@ -37,22 +46,28 @@ done
 echo "Max number is: $max"
 
 
+### How to get the min number from a array###
+min=99
+ for ((i=1; i<=$min; i++)); do
+    if [ $num -lt $min]
+  then 
+     min = $num
+ fi
+done
+echo "Min number is: $min"
 
 
-###How to get the even number ####
+
+
+
+
+###How to get the even/odd number ####
  echo "Enter the number:"
- even num
   if [ $((num%2)) -eq 0 ]
  then
      echo "even number"
 else 
      echo "odd number"
+ fi
 
 
-
- ###How to get the sum of even orr odd number
-sum=0
-for ((i=0; i<100; i+=2)); do
-   sum=$((sum + i))
-   done
-   echo "Sum of even number below 100: $sum"
